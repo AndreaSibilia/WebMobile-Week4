@@ -6,7 +6,7 @@ function trackLocation(){
 	}
 }
 function showPosition(position){
-	document.getElementById('showLocation').innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
+	document.getElementById('showLocation').innerHTML = " Your coordinates - Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
 	var x = position.coords.latitude;
 	var y = position.coords.longitude;
 	L.marker([x,y]).addTo(mymap).bindPopup("This is your location").openPopup();
